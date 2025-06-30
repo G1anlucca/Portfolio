@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj</title>
+    <link rel="stylesheet" href="jav2.css">
+</head>
+<body>
+    <nav>
+            <a href="/index.html">Inicio</a>
+            <a href="portfolio.html">Portafolio</a>
+            <a href="/Blog/index.html">Blog</a>
+        </nav>
+        <body>
+    <div class="reloj-container">
+    <h1>Reloj Digital</h1>
+    <div id="reloj" class="reloj">00:00:00</div>
+  </div>
+
+  <script>
+  function actualizarReloj() {
+  const ahora = new Date();
+  let horas = ahora.getHours();
+  let minutos = ahora.getMinutes();
+  let segundos = ahora.getSeconds();
+
+  
+  horas = horas < 10 ? "0" + horas : horas;
+  minutos = minutos < 10 ? "0" + minutos : minutos;
+  segundos = segundos < 10 ? "0" + segundos : segundos;
+
+  const horaActual = `${horas}:${minutos}:${segundos}`;
+  document.getElementById("reloj").textContent = horaActual;
+}
+
+
+setInterval(actualizarReloj, 1000);
+
+
+actualizarReloj();</script>
+
+ <footer>
+    &copy; 2025 Yahir Accinelli - Todos los derechos reservados
+  </footer>
+</body>
+</html>

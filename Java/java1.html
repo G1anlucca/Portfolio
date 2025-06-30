@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="java.css">
+</head>
+<body>
+    <nav>
+            <a href="/index.html">Inicio</a>
+            <a href="portfolio.html">Portafolio</a>
+            <a href="/Blog/index.html">Blog</a>
+        </nav>
+<div class="calculadora">
+    <input type="text" id="pantalla" value="0">
+    <div class="resultado" id="resultado">Resultado</div>
+    <div class="botones">
+        <button onclick="presionar('7')">7</button>
+        <button onclick="presionar('8')">8</button>
+        <button onclick="presionar('9')">9</button>
+        <button onclick="presionar('/')">/</button>
+
+        <button onclick="presionar('4')">4</button>
+        <button onclick="presionar('5')">5</button>
+        <button onclick="presionar('6')">6</button>
+        <button onclick="presionar('*')">*</button>
+
+        <button onclick="presionar('1')">1</button>
+        <button onclick="presionar('2')">2</button>
+        <button onclick="presionar('3')">3</button>
+        <button onclick="presionar('-')">-</button>
+
+        <button onclick="limpiar()">C</button>
+        <button onclick="presionar('0')">0</button>
+        <button onclick="presionar('.')">.</button>
+        <button onclick="presionar('+')">+</button>
+
+        <button class="igual" onclick="calcular()">=</button>
+    </div>
+</div>
+<script>
+    let pantalla = document.getElementById('pantalla');
+    let resultadoDiv = document.getElementById('resultado');
+    let operacion = '';
+
+    function presionar(valor) {
+        if (pantalla.value === '0' && valor !== '.') {
+            pantalla.value = valor;
+        } else {
+            pantalla.value += valor;
+        }
+        operacion = pantalla.value;
+        resultadoDiv.textContent = 'Resultado';
+    }
+
+    function limpiar() {
+        pantalla.value = '0';
+        operacion = '';
+        resultadoDiv.textContent = 'Resultado';
+    }
+
+    function calcular() {
+        let resultado = eval(pantalla.value);
+        pantalla.value = resultado;
+        resultadoDiv.textContent = 'Resultado: ' + resultado;
+    }
+</script>
+
+<footer>
+    &copy; 2025 Yahir Accinelli - Todos los derechos reservados
+  </footer>
+</body>
+</html>

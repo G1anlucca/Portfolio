@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #535353;
+    color: #222;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #222;
+    color: white;
+    padding: 1.5em 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
+    
+}
+
+nav a {
+    margin: 0 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #00bcd4;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 1.5em 0;
+    color: #d1d1d1;
+}
+
+.yo {
+    color: white;
+    text-align: center;
+    padding: 3em 1em 2em 1em;
+    background: #444444;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    margin-bottom: 2em;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+}
+
+.yo img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 4px solid #00bcd4;
+    margin-bottom: 1em;
+}
+
+
+.seccion {
+    padding: 2em 1em;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 2em;
+    background: #474747;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.seccionColumna {
+    display: flex;
+    justify-content: center;
+    gap: 9em; 
+    padding: 1em ;
+    width: 100%;
+    height: auto;
+}
+.sobre-box, .trayectoria-box {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.box {
+    color: white;
+    border: 1px solid #575757;
+    padding: 0.5em;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    background: #4e4e4e;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    margin: 0 0.5em;
+}
+
+.projects {
+    
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em 0;
+}
+
+.project-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1.5em;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: relative;
+    
+}
+
+.project-box a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: larger;
+    top: 35px;
+    left: 0;
+    z-index: 1;
+}
+.project-box:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+.tecnologias img {
+    width: 80px;
+    height: 80px;
+    margin: 0.5em;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 2em;
+    border-radius: 0 0 12px 12px;
+    width: 100vw;
+    position: static;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
