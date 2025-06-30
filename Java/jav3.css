@@ -81,7 +81,7 @@ body {
 h1 {
     color: #fffcfc;
     position: absolute;
-    top: 100vh; 
+    top: 200px; 
     left: 50%;
     transform: translateX(-50%);
     width: max-content;
